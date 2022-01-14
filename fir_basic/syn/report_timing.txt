@@ -1,0 +1,134 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : myfir
+Version: O-2018.06-SP4
+Date   : Fri Nov 12 20:13:56 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: H1[2] (input port clocked by MY_CLK)
+  Endpoint: out_reg/out_1_reg[7]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  myfir              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 r
+  H1[2] (in)                                              0.00       0.50 r
+  stages_1/b_coeff[2] (stage_7)                           0.00       0.50 r
+  stages_1/mul/op2[2] (multiplier_7)                      0.00       0.50 r
+  stages_1/mul/mult_19/b[2] (multiplier_7_DW_mult_tc_0)
+                                                          0.00       0.50 r
+  stages_1/mul/mult_19/U335/ZN (XNOR2_X1)                 0.06       0.56 r
+  stages_1/mul/mult_19/U166/ZN (OAI22_X1)                 0.03       0.59 f
+  stages_1/mul/mult_19/U180/ZN (AND2_X1)                  0.04       0.64 f
+  stages_1/mul/mult_19/U174/Z (MUX2_X1)                   0.07       0.70 f
+  stages_1/mul/mult_19/U186/ZN (NAND2_X1)                 0.03       0.73 r
+  stages_1/mul/mult_19/U158/ZN (AND3_X2)                  0.05       0.79 r
+  stages_1/mul/mult_19/U196/ZN (OAI222_X1)                0.05       0.83 f
+  stages_1/mul/mult_19/U195/ZN (NAND2_X1)                 0.04       0.87 r
+  stages_1/mul/mult_19/U175/ZN (NAND3_X1)                 0.04       0.91 f
+  stages_1/mul/mult_19/U202/ZN (NAND2_X1)                 0.03       0.94 r
+  stages_1/mul/mult_19/U189/ZN (AND3_X1)                  0.05       0.99 r
+  stages_1/mul/mult_19/U201/ZN (OAI222_X1)                0.05       1.04 f
+  stages_1/mul/mult_19/U182/Z (BUF_X1)                    0.04       1.08 f
+  stages_1/mul/mult_19/U197/ZN (XNOR2_X1)                 0.05       1.14 f
+  stages_1/mul/mult_19/product[8] (multiplier_7_DW_mult_tc_0)
+                                                          0.00       1.14 f
+  stages_1/mul/dout[8] (multiplier_7)                     0.00       1.14 f
+  stages_1/add/op1[0] (adder_7)                           0.00       1.14 f
+  stages_1/add/add_18/A[0] (adder_7_DW01_add_0)           0.00       1.14 f
+  stages_1/add/add_18/U9/ZN (AND2_X1)                     0.04       1.18 f
+  stages_1/add/add_18/U1_1/CO (FA_X1)                     0.10       1.28 f
+  stages_1/add/add_18/U1_2/CO (FA_X1)                     0.09       1.37 f
+  stages_1/add/add_18/U1_3/S (FA_X1)                      0.14       1.51 r
+  stages_1/add/add_18/SUM[3] (adder_7_DW01_add_0)         0.00       1.51 r
+  stages_1/add/dout[3] (adder_7)                          0.00       1.51 r
+  stages_1/sum_out[3] (stage_7)                           0.00       1.51 r
+  stages_2/sum_in[3] (stage_6)                            0.00       1.51 r
+  stages_2/add/op2[3] (adder_6)                           0.00       1.51 r
+  stages_2/add/add_18/B[3] (adder_6_DW01_add_0)           0.00       1.51 r
+  stages_2/add/add_18/U1_3/S (FA_X1)                      0.12       1.62 f
+  stages_2/add/add_18/SUM[3] (adder_6_DW01_add_0)         0.00       1.62 f
+  stages_2/add/dout[3] (adder_6)                          0.00       1.62 f
+  stages_2/sum_out[3] (stage_6)                           0.00       1.62 f
+  stages_3/sum_in[3] (stage_5)                            0.00       1.62 f
+  stages_3/add/op2[3] (adder_5)                           0.00       1.62 f
+  stages_3/add/add_18/B[3] (adder_5_DW01_add_0)           0.00       1.62 f
+  stages_3/add/add_18/U1_3/CO (FA_X1)                     0.10       1.73 f
+  stages_3/add/add_18/U1_4/CO (FA_X1)                     0.09       1.82 f
+  stages_3/add/add_18/U1_5/S (FA_X1)                      0.14       1.96 r
+  stages_3/add/add_18/SUM[5] (adder_5_DW01_add_0)         0.00       1.96 r
+  stages_3/add/dout[5] (adder_5)                          0.00       1.96 r
+  stages_3/sum_out[5] (stage_5)                           0.00       1.96 r
+  stages_4/sum_in[5] (stage_4)                            0.00       1.96 r
+  stages_4/add/op2[5] (adder_4)                           0.00       1.96 r
+  stages_4/add/add_18/B[5] (adder_4_DW01_add_0)           0.00       1.96 r
+  stages_4/add/add_18/U1_5/S (FA_X1)                      0.12       2.07 f
+  stages_4/add/add_18/SUM[5] (adder_4_DW01_add_0)         0.00       2.07 f
+  stages_4/add/dout[5] (adder_4)                          0.00       2.07 f
+  stages_4/sum_out[5] (stage_4)                           0.00       2.07 f
+  stages_5/sum_in[5] (stage_3)                            0.00       2.07 f
+  stages_5/add/op2[5] (adder_3)                           0.00       2.07 f
+  stages_5/add/add_18/B[5] (adder_3_DW01_add_0)           0.00       2.07 f
+  stages_5/add/add_18/U1_5/CO (FA_X1)                     0.10       2.18 f
+  stages_5/add/add_18/U1_6/S (FA_X1)                      0.14       2.31 r
+  stages_5/add/add_18/SUM[6] (adder_3_DW01_add_0)         0.00       2.31 r
+  stages_5/add/dout[6] (adder_3)                          0.00       2.31 r
+  stages_5/sum_out[6] (stage_3)                           0.00       2.31 r
+  stages_6/sum_in[6] (stage_2)                            0.00       2.31 r
+  stages_6/add/op2[6] (adder_2)                           0.00       2.31 r
+  stages_6/add/add_18/B[6] (adder_2_DW01_add_0)           0.00       2.31 r
+  stages_6/add/add_18/U1_6/S (FA_X1)                      0.12       2.43 f
+  stages_6/add/add_18/SUM[6] (adder_2_DW01_add_0)         0.00       2.43 f
+  stages_6/add/dout[6] (adder_2)                          0.00       2.43 f
+  stages_6/sum_out[6] (stage_2)                           0.00       2.43 f
+  stages_7/sum_in[6] (stage_1)                            0.00       2.43 f
+  stages_7/add/op2[6] (adder_1)                           0.00       2.43 f
+  stages_7/add/add_18/B[6] (adder_1_DW01_add_0)           0.00       2.43 f
+  stages_7/add/add_18/U1_6/CO (FA_X1)                     0.10       2.53 f
+  stages_7/add/add_18/U1_7/S (FA_X1)                      0.13       2.67 r
+  stages_7/add/add_18/SUM[7] (adder_1_DW01_add_0)         0.00       2.67 r
+  stages_7/add/dout[7] (adder_1)                          0.00       2.67 r
+  stages_7/sum_out[7] (stage_1)                           0.00       2.67 r
+  stages_8/sum_in[7] (stage_0)                            0.00       2.67 r
+  stages_8/add/op2[7] (adder_0)                           0.00       2.67 r
+  stages_8/add/add_18/B[7] (adder_0_DW01_add_0)           0.00       2.67 r
+  stages_8/add/add_18/U1_7/S (FA_X1)                      0.11       2.78 f
+  stages_8/add/add_18/SUM[7] (adder_0_DW01_add_0)         0.00       2.78 f
+  stages_8/add/dout[7] (adder_0)                          0.00       2.78 f
+  stages_8/sum_out[7] (stage_0)                           0.00       2.78 f
+  out_reg/in_1[7] (reg_8)                                 0.00       2.78 f
+  out_reg/U20/ZN (NAND2_X1)                               0.03       2.81 r
+  out_reg/U3/ZN (NAND2_X1)                                0.02       2.83 f
+  out_reg/out_1_reg[7]/D (DFFR_X1)                        0.01       2.84 f
+  data arrival time                                                  2.84
+
+  clock MY_CLK (rise edge)                                2.67       2.67
+  clock network delay (ideal)                             0.00       2.67
+  clock uncertainty                                      -0.07       2.60
+  out_reg/out_1_reg[7]/CK (DFFR_X1)                       0.00       2.60 r
+  library setup time                                     -0.04       2.56
+  data required time                                                 2.56
+  --------------------------------------------------------------------------
+  data required time                                                 2.56
+  data arrival time                                                 -2.84
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.28
+
+
+1

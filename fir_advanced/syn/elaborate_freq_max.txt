@@ -1,0 +1,34 @@
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Warning: Overwriting design file '/home/isa19_2021_2022/Desktop/fir_advanced/syn/my_fir.db'. (DDB-24)
+Elaborated 1 design.
+Current design is now 'my_fir'.
+Information: Building the design 'stage1'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'stage2'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'stage3'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'REG'. (HDL-193)
+
+Inferred memory devices in process
+	in routine REG line 21 in file
+		'../src/REG.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'FD'. (HDL-193)
+
+Inferred memory devices in process
+	in routine FD line 21 in file
+		'../src/FD.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+1
